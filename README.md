@@ -40,3 +40,143 @@ Esos son suficientes para descargar y poder tener git en y ver la version
 como el paquete de git que tenemos.
 Git es multiprogramacion, funciona de igual manera en diferentes de sistemas
 operativos, lo unico que cambia es la forma de instalarlo.
+## Clase 2
+
+## STATES Y COMMITS
+
+Resumen breve de estos dos conceptos seria states(estados en GIT), son las
+etapas por las que pasa un archivo de un git, "Directoirio de Trabajo":
+la carpeta local, donde estamos trabajando pero git aun no lo tiene
+registrado, "Stage Area": El area de espera donde todo esta listo para
+guardarse, "Repositorio local": archivo guardado en el historial del
+repositorio.
+
+commi(buenas practicas) seria  un modo convecional para escribir mensajes
+de commit claros, estructurados y consistente, de modo que el hsitorial
+del proyecto sea facil de entender y automatizar.
+
+
+## Directorio de Trabajo 
+
+## STATES Y COMMITS
+
+Resumen breve de estos dos conceptos seria states(estados en GIT), son las
+etapas por las que pasa un archivo de un git, "Directoirio de Trabajo":
+la carpeta local, donde estamos trabajando pero git aun no lo tiene
+registrado, "Stage Area": El area de espera donde todo esta listo para
+guardarse, "Repositorio local": archivo guardado en el historial del
+repositorio.
+
+commi(buenas practicas) seria  un modo convecional para escribir mensajes
+de commit claros, estructurados y consistente, de modo que el hsitorial
+del proyecto sea facil de entender y automatizar.
+
+
+## Directorio de Trabajo 
+al repositorio, no se vera todo lo que este en el .gitignore, no se ver nada 
+de lo que contenga en el gitignore en plataformas como git hub.
+
+@@ -94,6 +128,23 @@
+Es la ultima fase donde le decimos al repositorio de que cree el punto 
+de guardado para que todos los cambios que estan en staged pasen a ser parte 
+del historial.
+
+## STATES Y COMMITS
+
+Resumen breve de estos dos conceptos seria states(estados en GIT), son las
+etapas por las que pasa un archivo de un git, "Directoirio de Trabajo":
+la carpeta local, donde estamos trabajando pero git aun no lo tiene
+registrado, "Stage Area": El area de espera donde todo esta listo para
+guardarse, "Repositorio local": archivo guardado en el historial del
+repositorio.
+
+commi(buenas practicas) seria  un modo convecional para escribir mensajes
+de commit claros, estructurados y consistente, de modo que el hsitorial
+del proyecto sea facil de entender y automatizar.
+
+
+## Directorio de Trabajo 
+
+git commit -m "mesanje"
+git reset --soft HEAD~` : si quieres deshacer el ultimo commit
+@@ -109,6 +160,23 @@
+proyecto en estado funcional.
+
+### Escribe buenos commtis
+
+## STATES Y COMMITS
+
+Resumen breve de estos dos conceptos seria states(estados en GIT), son las
+etapas por las que pasa un archivo de un git, "Directoirio de Trabajo":
+la carpeta local, donde estamos trabajando pero git aun no lo tiene
+registrado, "Stage Area": El area de espera donde todo esta listo para
+guardarse, "Repositorio local": archivo guardado en el historial del
+repositorio.
+
+commi(buenas practicas) seria  un modo convecional para escribir mensajes
+de commit claros, estructurados y consistente, de modo que el hsitorial
+del proyecto sea facil de entender y automatizar.
+
+
+## Directorio de Trabajo 
+
+Un commit debe describir lo que hace en pocas palabras y de manera simple 
+pero efectivo:
+@@ -118,41 +186,58 @@
+add : "Significa que se agrefa un nuevo archivo"
+
+change : "Significa que se modifica un archivo existente"
+
+
+## STATES Y COMMITS
+
+Resumen breve de estos dos conceptos seria states(estados en GIT), son las
+etapas por las que pasa un archivo de un git, "Directoirio de Trabajo":
+la carpeta local, donde estamos trabajando pero git aun no lo tiene
+registrado, "Stage Area": El area de espera donde todo esta listo para
+guardarse, "Repositorio local": archivo guardado en el historial del
+repositorio.
+
+commi(buenas practicas) seria  un modo convecional para escribir mensajes
+de commit claros, estructurados y consistente, de modo que el hsitorial
+del proyecto sea facil de entender y automatizar.
+
+
+## Directorio de Trabajo 
+
+Fix : "Significa que se modifica un archivo existente"
+
+Remove : "Significa que se elemina un archivo existente"
+
+##Clase 3 
+
+### GITHUB Y SSH
+
+### Que es GitHub?
+
+Es una plataforma en la nube y red social para desarrollarse que permite 
+alojar, gestionar, y colaborar en proyectos de software utilizando Git, 
+basicamente Git es el respositorio local y GitHub es el respositorio remoto.
+
+### Para que sirve?
+
+Sirve para subir proyectos de progrmacion, colaborar, con otras personas, 
+revisar cambios hechos por diferentes usuarios, hacer copias de seguridad
+del codigo, mostrar proyecto(portafolios).
+
+### SSH VS HTTPS
+
+### HTTPS
+
+Cuando clonamos y queremos usar un repositorio con HTTPS, este nos pedira
+autenticacion cada vez, hasta pidiendo un token. Lo cual hace que sea 
+cansancio y molesto.
+
+### SSH
+
+Configuramos en nuestra PC/laptop ssh para comunicarnos con github, mediante 
+una key la cual al ponerla en github no necetira pedirnos autenticacion cada
+vez.
+
+Por tales inconvenientes con HTTPS es mas recomdado usar SHH key.
+
