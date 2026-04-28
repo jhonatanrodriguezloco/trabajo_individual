@@ -120,33 +120,19 @@ del proyecto sea facil de entender y automatizar.
 
 ## Directorio de Trabajo 
 
-Un commit debe describir lo que hace en pocas palabras y de manera simple 
+Un commit debe describir lo que hace en pocas palabras y de manera simple
+Fix: "Significa" 
 pero efectivo:
-@@ -118,41 +186,58 @@
 add : "Significa que se agrefa un nuevo archivo"
 
 change : "Significa que se modifica un archivo existente"
 
 
-## STATES Y COMMITS
-
-Resumen breve de estos dos conceptos seria states(estados en GIT), son las
-etapas por las que pasa un archivo de un git, "Directoirio de Trabajo":
-la carpeta local, donde estamos trabajando pero git aun no lo tiene
-registrado, "Stage Area": El area de espera donde todo esta listo para
-guardarse, "Repositorio local": archivo guardado en el historial del
-repositorio.
-
-commi(buenas practicas) seria  un modo convecional para escribir mensajes
-de commit claros, estructurados y consistente, de modo que el hsitorial
-del proyecto sea facil de entender y automatizar.
 
 
-## Directorio de Trabajo 
+##Clase 3 
 
-Fix : "Significa que se modifica un archivo existente"
-
-Remove : "Significa que se elemina un archivo existente"
+### GIT
 
 ##Clase 3 
 
@@ -179,4 +165,21 @@ una key la cual al ponerla en github no necetira pedirnos autenticacion cada
 vez.
 
 Por tales inconvenientes con HTTPS es mas recomdado usar SHH key.
+
+## Conectar un repositorio local de Git existente con uno en Github
+
+git remote add origin
+
+Remote es la URL que apunta al servidor externo es decir a tu repositorio  externo creado en Github
+y Origin es simplemente el apodo, que git le da por defecto a esa URL
+
+Primero debes inicializar tu repositorio local y tener un commmit inicial al menor
+
+##Clonar un repositorio de Git
+
+Para la clonacion de un repositorio de git debemos seguir una secuencia de pasos para tener 
+corrextamente lo que queremos de el, los comandos pueden camiar de puntero de github y no te pida
+auntenticacion cada vez, tambien podemos usar cuando queremos cambiar el remooto al cual esta conectada el repositorio.
+
+
 
