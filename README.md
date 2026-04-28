@@ -40,6 +40,10 @@ Esos son suficientes para descargar y poder tener git en y ver la version
 como el paquete de git que tenemos.
 Git es multiprogramacion, funciona de igual manera en diferentes de sistemas
 operativos, lo unico que cambia es la forma de instalarlo.
+		EL motivo por lo que presente tarde es porque mi maquina virtual
+		elimian mi avance, no puedo hacer apagar, sino solo suspender,
+		Por favor considereme por favor pepepepe.
+
 ## Clase 2
 
 ## STATES Y COMMITS
@@ -128,6 +132,9 @@ add : "Significa que se agrefa un nuevo archivo"
 change : "Significa que se modifica un archivo existente"
 
 
+		EL motivo por lo que presente tarde es porque mi maquina virtual
+                elimian mi avance, no puedo hacer apagar, sino solo suspender, 
+                Por favor considereme por favor pepepepe.
 
 
 ##Clase 3 
@@ -181,5 +188,100 @@ Para la clonacion de un repositorio de git debemos seguir una secuencia de pasos
 corrextamente lo que queremos de el, los comandos pueden camiar de puntero de github y no te pida
 auntenticacion cada vez, tambien podemos usar cuando queremos cambiar el remooto al cual esta conectada el repositorio.
 
+		EL motivo por lo que presente tarde es porque mi maquina virtual
+                elimian mi avance, no puedo hacer apagar, sino solo suspender, 
+                Por favor considereme por favor pepepepe.
+
+
+## Clase 4
+
+## Git Remote(respositorio remoto)
+
+git remote permite coectar tu repositrio local con uno remoto, indicando de donde traer o donde 
+enviar.
+ git remote ~v 
+ mustra la url del repositorio remoto
+ git remote add (nombre) 
+ vincula el repo local con remoto
+ git remote set~url
+ cambia el url del remoto
+En resumen sirve para gestionar conexiones entre tu pc y la nube.
+
+## Multiples SSH(cuentas GitHub)
+
+Cuando tienes mas de un cuenta en github, necesitas diferentes llaves SSH para cada una.
+
+Cada cuenta tiene su propia "llave", como una puerta diferente.
+
+## Configuracion de multiples SSH
+
+# Paso 1: Crear la nueva llave
+
+# Paso 2: Configurar el  archivo
+
+# Paso 3: Verificar conexion 
+
+# Configuracion local en GIT
+
+Las configuraciones locales son solo para un repositorio y tienen prioridad sobre las globales.
+	git config user.name "Name"
+	git config user.email "correo"
+No llevan ~~global .
+Se usan cuando trabajas con distintas cuentas en diferentes proyectos.
+## Clonar con el host correcto
+
+Cuando usaas multiples cuentas, debes clonar asi:
+
+	git clone git@github-miname:usuario/repositorio.git
+
+Si usas mal el host, usaras la cuenta equivocada.
+
+## Git Checkout
+
+Permite ver los commit.
+Recuperar archivos.
+Cambiar de rama.
+Probar cambios sin efectar a la rama principal.
+
+## Detached HEAD(estado desacoplado)
+
+Sucede cuando el HEad apunta a un commit y no a una rama.
+
+Estas viendo el pasado.
+Puedes hacer cambios, pero no estan guardados en una rama.
+Si sale, puedes perderlos para siempre.
+Es cmo ser un visitante en el historal.
+
+## Como moverse entre los commit
+
+	git checkout <hash>
+
+Volver a una rama: 
+
+	git checkout main
+
+Si hiciste cambios en Detached HEAD:
+
+	git checkout -b nueva_rama
+
+Esto guarda tus cambios en una nueva rama.
+
+## Buenas practicas con Checkout
+
+Haz commit antes de moverte.
+No trabajes de mucho en Deadched HEAD.
+Crea una rama si haras cambios importantes.
+Manten limpio tu direccitorio.
+Usa checkout para aprender viendo el historial.
+
+EL git remote permite conectar repositorios locales con remotos para manejar multiples cuentas de github se
+usan varias llaves SSH configuradas en un archivo confif. Las configuraciones locales se aplican por 
+respoditorio. El comando git checkput permite moverse entre commits y ramas, pudiendo entrar en estado
+"Detached HEAD", donde los cambios pueden perderse si no se crea una rama, Es importante seguir buenas
+practicas como hacer commit antes de cambiar de estado y no trabajar mucho tiempo en ese modo.
+
+		EL motivo por lo que presente tarde es porque mi maquina virtual
+                elimian mi avance, no puedo hacer apagar, sino solo suspender, 
+                Por favor considereme por favor pepepepe.
 
 
