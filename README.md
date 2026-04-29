@@ -285,3 +285,115 @@ practicas como hacer commit antes de cambiar de estado y no trabajar mucho tiemp
                 Por favor considereme por favor pepepepe.
 
 
+## Clase 5
+
+## Que son las ramas en Git?
+
+Las ramas(branches)son una de las herramientas mas importantes de git,basicamente, una rama es como una 
+linea alternativa de trabajo dentro de tu proyecto.
+Podemos imaginar que estas desarrllando de tu proyecto un programa:
+
+ Tienes una version principal funcionando pero quieres probar algo nuevo sin arruinar lo que ya funciona.
+
+Entonces creas una rama, donde puedes trabajar sin afectar el codigo principal.
+Son una bifurcacion del codigo que permiten trabajar en paralelo y ayudan a mantener el codigo organizado.
+
+## Comandos basicos de ramas
+
+	git branch 
+
+Sirve ver las ramas existentes y saber en cual estas trabajando(HEAD).
+
+	git branch(nombre)
+
+Crea una nueva rama desde donde estas.
+
+	git branch -D (nombre)
+
+Elimina una rama.
+
+## Cambiar de ramas
+
+	get checkout(nombre)
+
+Cambia de una rama a otra(No debes tener cambios sin guardar)
+
+	get checkout -b (rama)
+
+Crea una rama y se mueve autimaticamente a ella
+
+## gicheckoout vs git switch
+
+git checkout hace muchas cosas:
+  
+ Cambiar ramas.
+ Volver a commits antiguos.
+ Restaurar archivos.
+
+EL problema era mas facil equivocarse(entrar a un detached HEAD).
+
+git switch(desde 20190) es mas claro:
+
+ Solo sirve para cambiar ramas.
+ Es mas seguro y facil de usar.
+
+## Que es Gitflow?
+
+Gitflow es un modelo de trabajo organizado con ramas, sirve trabajar en equipo, mantener orden en el proyecto
+ y controlar versiones facilmente.
+
+Sin Gitflow todo es desordenado y muchas ramas sin control.
+
+## Ramas principales en Gitflow
+
+Son las principales como:
+Main(o master)
+	rama principal.
+	contiene el codigo en produccion.
+	version estable del proyecto.
+
+Develop
+	rama de desarollo
+	integra las nuevas funcionalidades.
+	donde mas trabaja el equipo.
+
+## Ramas de apoyo
+
+Estas ramas nacen para tareas especificas:
+
+Feature/*
+	desarrollar nuevas funcionalidades .
+	Nacen de delevop.
+	Vuelven delevop cuando terminan.
+
+Como ejemplo tenemos:
+	featire/login
+	feature/busqueda
+
+Release/*
+
+	preparar una nueva version.
+	hacen pruebas finales(QA).
+	funsionan en main y develop
+
+Como  ejemplo tenemos:
+
+	release/v1.0.0
+
+Hotfix/*
+
+	arreglar errores urgentes en produccion.
+	nacen de main
+	funsionan en main y develop.
+
+Como ejemplo tenemos:
+
+	hotfix/error-login
+
+El documento trata sobre como trabajar con ramas en Git y como organizarlas usando Gitflow, que es una forma 
+ordenada de trabajar en equipo.
+
+Las ramas son como caminos alternativos dentro de un proyecto. Permiten que varias personas(o tu mismo) 
+trabajando en diferentes partes del codigo sin afectar la version principal. Puedes probar cosas nuevas, 
+corregir errores o desarollar funcionalidades sin romper lo que ya funciona.O
+
