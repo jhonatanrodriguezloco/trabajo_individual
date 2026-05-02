@@ -469,3 +469,73 @@ funcionalidades o correcciones sin afectar directamente la rama principal.
 Crear ramas ayuda a mantener el proyecto organizado y facilita el trabajo en equipo.
 
 
+## Clase 7
+
+## Pull Request
+
+## Que son los pull request?
+
+Llamados tambien (PRS), es una forma profesional de trabajar con git/github, crea un request(pedidio)
+en el grupom  del repositorio en github que permite ver cambios se requieren unir(mergear) al codigo basa
+existente.
+
+EL pull request(PR) se usa principalmente en equipos porque cambios antes de integrarle al proyecto principal.
+
+	1 Ver cambios linea por linea.
+	2 Comentar codigo.
+	3 Aprobar o rechazar cambios.
+	4 Ejecutar revisione.
+	5 Hacer el merge.
+## Como crear un PR?
+
+Un pull request se crea en una plataforma como githb despues de subir tu rama al repositorio remoto.
+
+Requisitos previos:
+
+	1 Una rama creada(future/login).
+	2 Cambios commiteados.
+	3 Rama subida a github.
+
+## Porque usamos lso PRs si ya podemos trabaajar normalmente sin ellos?
+
+Se usan por razones de seguirdad y control del codigo. Permitir que cualquier colaborador haga merge 
+directamente al repositorio principalmente resvision representa un riesgo, ya que podria introducir errores,
+codigo malicioso o cambios no deseados. Sin un proceso de revision, no hay forma de validar que codigo se 
+esta integrando ni de asegurar su calidad o intencion.
+
+Los pull request obligan al equipo a revidar los cambios antes de integrarlo. Esto no limita la colaboracion,
+sino que la organiza, ya que promueve la revision del codigo, el debate y la toma de descisiones sibre  lo 
+que se va a implementar.
+
+Permiten enteder que cambios se haran, quien los propone y quien los aprueba o rechaza, mejorando la
+coordinacion y el control del repositorio  en equipo.
+
+## Como proteger mi repositorio y limitar la colaboracion?
+
+Ya conocemos la importsncia de los pull request, pero aun no hemos aplicado restricciones reales. Aunque
+confiemos en que los colaboredores esperen la revision y aprobacion antes de integrar su codigo, todavia 
+tienen la capacidad de hacer cambios directamente si no se establecen controles.
+
+Para evitar esto, es necesario configurar reglas de proteccion en el repositorio como rectricciones de merge 
+y requerir revisiones obligatorios antes de aceptar cambios.
+
+## Como colaboro al proyecto si no soy un colaborador invitado?
+
+Hacr un fork del repositorio, trabajas en tu copia y luego envias un pull request al proyecto original.
+
+## Como colaboro si no soy colaborador invitado?
+
+Haces un fork del repositorio, trabajas en tu copia y luego envias un pull request al proyecto original.
+
+	1 Fork del repositoriio.
+	2 Clonar tu fork.
+	3 Crear una rama.
+	4 Hacer cambios y commits.
+	5 Subir cambios a tu fork,
+	6 Abrir un pull request
+
+No modifcas el repositorio original directamente, propones cambios mediante un PR para que sean revisados y
+aceptados.
+
+
+
