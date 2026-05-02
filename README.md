@@ -397,3 +397,75 @@ Las ramas son como caminos alternativos dentro de un proyecto. Permiten que vari
 trabajando en diferentes partes del codigo sin afectar la version principal. Puedes probar cosas nuevas, 
 corregir errores o desarollar funcionalidades sin romper lo que ya funciona.O
 
+## Clase 6
+## Flujo de trabajo y sincronizacion de ramas en Git
+
+## git merge
+
+El comando git merse se utiliza para fusionar ramas, su objetivo es integrar los cambios realizados en una
+rama dentro de otra, esto permite que todos los commits formen parte de un mismo historial de trabajo.
+
+Si una persona desarrolla una funcionalidad en una rama secundaria posteriormente puede unir esos cambios
+a la rama principal git.
+
+Tambien se suele usar el 
+		flag --no-ff
+
+no fast forwars. Este evita que git haga una fusion rapida que elimine evidencia visiual de la existencia
+de la rama. En cambio, obliga a crear  un commit de merge, conservando el historial completo del
+desarrollo y facilitando el seguimiento de cambios incluso si la rama original es eliminada.
+
+## git fetch
+
+EL comando git fetch sirve para consultar y descargar informacion nueva del respositorio remoto sin 
+modificar directamente los archivos locales del proyecto.
+
+Permite verificar si existen nuevos commit o cambios realizados pot otros colaboreadores en las ramas remotas.
+Es util para mantenerse informado antes de actualizar el repositorio.
+
+ 
+## git pull
+
+El comando git pull se utiliza para traer y actualizar automaticamente los cambios desde el repositorio 
+remoto hacia la rama local actual.
+
+Internamente, cambia git fetch a git merge, ya que primero descarga los cambios y luego los fusiona con la 
+rama local, debes de especificar el repositorio remoto(origin) y la rama para evitar errores.
+
+## git push 
+
+El comando git push permite subir los commit locales al repositorio remoto para compartir los cambios con 
+otros integrantes del proyecto.
+
+Tambien es recomendable especificar el respositorio remotoo y la rama correspondiente.
+
+Cuando se sube uan rama remota y evitar configuraciones posteriores.
+
+	1 Cambiar a la rama principal.
+	2 Verifcar cambios remotos.
+	3 Actualizar la rama local.
+	4 Fusionar a la rama de trabajo.
+	5 Resuelve manualmente lso archivos fallidos y sus conflictos.
+	6 Agregar los archivos corregidos.
+	7 Crear el commit del marge
+	8 Eliminar la rama ya utilizada.
+	9 SUbir los cambios finales al repositorio remoto.
+
+## Conflictos de Git
+
+Un conflicto ocurre cuando dos personas modifican la misma parte de un archivo y git no puede decidir 
+automaticamente que cambio conservar.
+
+Esto suele suceder durante un git merge o git pull. En esos casos, git marca los archivos con conflictos 
+para que el usuario los revise manualmente.
+
+Despues de corregir lso conflictos, se debe ejecutar.
+
+## Ramas
+
+Una rama(branch) es una linea de desarrollo independiente dentro del proyecto. Permite trabajar en nuevas
+funcionalidades o correcciones sin afectar directamente la rama principal.
+
+Crear ramas ayuda a mantener el proyecto organizado y facilita el trabajo en equipo.
+
+
