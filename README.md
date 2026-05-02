@@ -537,5 +537,59 @@ Haces un fork del repositorio, trabajas en tu copia y luego envias un pull reque
 No modifcas el repositorio original directamente, propones cambios mediante un PR para que sean revisados y
 aceptados.
 
+## Clase 8
 
+## Que pasa si aprobarn en PR que modifico lo mismo que yo?
 
+Si otra persona hizo merge primero, y tu tambien modoficaste esos archivos, tu rama quedo desactualizada
+respecto a main. Antes de traer cambios nuevos, se recomienda guardar temporalmente tu trabajo.
+
+## git stash
+
+Sirve para guardar cambios temporales sin hacer commit.
+	
+	Archivos moficados.
+	Staging.
+	Estado temporal del trabajo.
+	Limpia el direcctorio.
+
+## Buenas practicas
+
+Despues de mergear un pull request, la rama ya cumplio su proposito, conviene eliminarl, un reposotorio 
+limpio, menos ramas viejas y menos confusion con los commits.
+
+Los commit pequenos son muy importantes, los mensajes claros ayudan a visuaizar mejor los commits como en
+otros puntos, asi no nos perdemos al realizar la rama.
+
+Cada commit solo tiene que tener una sola responsabilidad, en este caso puede ser docs.etc.
+Las ramas tienen una funcionalidad por separado y los PRs son separadas por funcionalidad.
+
+## git diff 
+
+Sirve para ver diferencias o cambios, ver cambios no staged, algo similar usando el directorio actual,
+podemos ver los cambios de un archivo:
+
+        Que cambios entre ramas?
+        Que agregaron en PR?
+	
+## Buena practica: borrar la rama despues de hacer merge
+
+Consiste en eliminar una rama que ya fue integradaal proyecto principal(main o master) mediante un merge
+o pull request, porque su trabajo ya termino y no necesita seguir existiendo, mantener el repositorio:
+
+	Limpio.
+	Organizado.
+	Facil de entender.	
+
+Para crear tenemos que:
+
+	1 se hace push
+	2 se crea un PR
+	3 el PR se aprueba
+	4 se mergea a main
+
+En ese momento la rama ya cumplio su funcion, entonces eliminar porque termino.
+
+Es una buena practica porque evita, ramas viejas acumuladas confusion sobre que ramas siguen activas 
+trabajando sobre codgio obsoleto desorden en equipos grandes, es una rama  temporal de trabajo para
+desarrollar uan funcionalidad, ix o mejora. 
